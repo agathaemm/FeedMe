@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ping Pong Pow</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h1>Ping Pong Pow</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row botoes">
+                <div class="col-md-6" style="text-align: left">
+                    <button class="btn btn-info" onclick="game.Pause();">Pausar / Continuar</button>
+                    <button class="btn btn-success" onclick="game.Start();">Novo Jogo</button>
+                </div>
+                <div class="col-md-6">
+                    <div id="GameStatus" class="game-status">Clique em "Novo Jogo"</div>
+                </div>
+            </div>
+
+            <div class="row mundo">
+                <div class="col-md-6">
+                    <div id="wrapper"></div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Jogador 1</h3>
+                    <p>Use A e D para mover</p>
+                    <h3>Jogador 2</h3>
+                    <p>Use <- e -> para mover</p>
+                </div>
+            </div>
+        </div>
+         
+        <script src="js/Functions.js"></script>
+        <script src="classes/World.js"></script>
+        <script src="classes/Square.js"></script>
+        <script src="classes/Rect.js"></script>
+        <script src="classes/Food.js"></script>
+        <script src="classes/Game.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
